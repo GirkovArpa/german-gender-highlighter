@@ -1,0 +1,41 @@
+@set content {
+  :root {
+    width: *; 
+    height: *;
+    padding: 1em;
+    flow: vertical;
+    border-spacing: 0.5em;
+  }
+
+  h1 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  plaintext {
+    background: #ddd;
+    font-family: Arial;
+    font-weight: bold;
+    background: #111;
+    color: #ddd;
+    font-size: 14pt;
+    padding: 1em;
+    border-spacing: 0.25em;
+  }
+
+  plaintext > text::mark(male) { 
+    color: blue;
+    text-decoration: wavy underline blue;
+  }
+
+  plaintext > text::mark(female) { 
+    color: pink;
+    text-decoration: wavy underline pink;
+  }
+
+  plaintext > text::mark(neuter) { 
+    color: grey;
+    text-decoration: wavy underline grey;
+  }
+
+}
